@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luggage Owner Contact Card</title>
+    <style>
+        :root {
+            --primary-color: #1e293b;
+            --accent-color: #2563eb;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #334155;
+            --text-light: #64748b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            max-width: 420px;
+            width: 100%;
+            padding: 28px;
+            text-align: center;
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            background-color: #e0e7ff;
+            color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px auto;
+            font-size: 28px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-bottom: 6px;
+        }
+
+        p.subtitle {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-bottom: 24px;
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 14px 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.1s ease, background-color 0.2s ease;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: #ffffff;
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: #ffffff;
+        }
+
+        .btn-secondary {
+            background-color: #f1f5f9;
+            color: var(--text-color);
+        }
+
+        .note {
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="icon">🧳</div>
+        <h1>Found My Luggage?</h1>
+        <p class="subtitle">Thank you for taking the time to report this bag! Please contact me using any option below:</p>
+
+        <div class="actions">
+            <a href="tel:+16047900212" class="btn btn-primary">
+                📞 Call Me @ +1 (604) 790-0212
+            </a>
+
+            <a href="https://wa.me/16047900212?text=Hi!%20I%20found%20your%20luggage." class="btn btn-whatsapp" target="_blank">
+                💬 Message on WhatsApp
+            </a>
+          
+            <a href="mailto:doan.daniel@gmail.com?subject=Found%20Luggage" class="btn btn-secondary">
+                ✉️ Send Email
+            </a>
+        </div>
+
+        <div class="note">
+            <p><strong>Reward offered</strong> for safe return or assistance returning to airport staff / airline gate desk.</p>
+        </div>
+    </div>
+
+</body>
+</html>
